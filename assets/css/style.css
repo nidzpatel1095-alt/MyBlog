@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5; /* SAFE background */
+}
+
+/* Login Container */
+.login-container {
+    width: 320px;
+    margin: 120px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #2f7cd8;
+}
+/* Feed Container */
+.feed-container {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+/* Post Card */
+.post-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+/* Header */
+.post-header {
+    padding: 12px;
+    font-weight: bold;
+}
+
+/* Image (MAIN PART 🔥) */
+.post-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Actions */
+.post-actions {
+    padding: 10px;
+}
+
+/* Content */
+.post-content {
+    padding: 10px;
+}
+
+/* Comment box */
+.comment-box {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+/* Navbar Fix */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #667eea;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+/* Form Styling inside login-container */
+textarea:focus, input:focus {
+    border-color: #667eea !important;
+    outline: none;
+}
+/* Dark Mode Classes */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar, 
+body.dark-mode .post-card, 
+body.dark-mode .login-container,
+body.dark-mode .stat-card,
+body.dark-mode table {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #ffffff;
+}
+
+body.dark-mode .user-card {
+    background-color: #252525;
+    color: white;
+}
+
+body.dark-mode input, body.dark-mode textarea {
+    background-color: #2d2d2d;
+    color: white;
+    border-color: #444;
+}
