@@ -41,6 +41,6 @@ As per the CIPAT guidelines, this project follows industry-standard practices:
 ---
 
 ### 📝 Academic Credit
-Developed for the Course-Integrated Practical & Analytical Task (CIPAT).
-College: C. K. Pithawala College of Engineering and Technology.
-Department: Information Technology.
+Developed for the Course-Integrated Practical & Analytical Task (CIPAT).<br>
+College: C. K. Pithawala College of Engineering and Technology.<br>
+Department: Information Technology.<br>
