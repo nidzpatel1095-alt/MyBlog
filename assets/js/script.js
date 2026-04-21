@@ -1,7 +1,10 @@
 document.querySelectorAll(".like-btn").forEach(button => {
-    button.addEventListener("click", function() {
+    button.addEventListener("click", function () {
         let postId = this.getAttribute("data-id");
         let countSpan = document.querySelector(".like-count-" + postId);
+
+        if (!countSpan) return;
+
         let currentLikes = parseInt(countSpan.innerText);
 
         fetch("like.php", {
@@ -11,12 +14,14 @@ document.querySelectorAll(".like-btn").forEach(button => {
         })
         .then(res => res.text())
         .then(data => {
-            if(data === "liked") {
+            if (data === "liked") {
                 countSpan.innerText = currentLikes + 1;
                 this.style.color = "red";
-            } else {
+            } else if (data === "unliked") {
                 countSpan.innerText = currentLikes - 1;
                 this.style.color = "black";
+            } else if (data === "login_required") {
+                window.location.href = "auth/login.php";
             }
         });
     });
